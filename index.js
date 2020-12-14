@@ -9,6 +9,8 @@ const { getOPVNFiles } = require("./lib/files");
 const { exclude } = require("inquirer/lib/objects/separator");
 const argv = require("minimist")(process.argv.slice(2));
 const { exec } = require("child_process");
+const { showPublicIP } = require("./lib/commands");
+const { Spinner } = require("clui");
 
 clear();
 
@@ -83,6 +85,16 @@ const start = async () => {
     console.log(`${stdout}`);
     console.log(`${stderr}`);
   });
+
+  clear();
+
+  console.log("Your Current Public IP is:");
+  showPublicIP();
+
+  setTimeout(() => {
+    console.log("Your new IP Address:");
+    showPublicIP();
+  }, 5000);
 };
 
 start();
