@@ -24,6 +24,6 @@ Step 3: Run VPNPURE, it will ask you to set the folder where the OVPN files are 
 Step 4: VPNPURE will ask you next which of the VPN profile/country to link to. It will present all the OPVN files and asked you to pick one. Do it, and in the background VPNPURE will do its magic and connect you. As easy as that. 
 
 Version - Limitations:
-* 0.0.1 - Not indication of successful connection, use 'tail -f /var/log/syslog' to inspect any connection errors for now. 
+* 0.0.1 - Non indication of successful connection, use 'tail -f /var/log/syslog' to inspect any connection errors for now. 
 
 Use of program is provided for free and "as-in". 
