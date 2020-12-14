@@ -1,6 +1,6 @@
 {
   "name": "vpnpure",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Select your VPN countries based on available OpenVPN files.",
   "main": "index.js",
   "scripts": {
